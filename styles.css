@@ -150,8 +150,19 @@ input[type="radio"]:checked::before {
     margin-top: 1.5rem;
 }
 
-.services-main-feature-img{
+.services-main-feature-content-one{
     margin-top: 4rem;
     display: flex;
     justify-content: space-around;
+}
+
+.services-main-feature-content-two{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.services-icon-content{
+    display: flex;
+    gap: 1rem;
 }
