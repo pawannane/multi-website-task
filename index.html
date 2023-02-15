@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -29,12 +30,35 @@
     </header>
     <main>
         <section id="home">
-            <div class="home-bg"></div>
-            <div class="slider-btns">
-                <input type="radio" name="slider" class="radio-btn" id="">
-                <input type="radio" name="slider" id="">
-                <input type="radio" name="slider" id="">
+
+            <!-- Slider container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img class="slideshow-img" src="assets/slider/1.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="slideshow-img" src="assets/slider/2.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="slideshow-img" src="assets/slider/3.jpg">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a onclick="plusSlides(-1)"><i class="fa fa-duotone fa-circle-chevron-left prev"></i></a>
+                <a onclick="plusSlides(1)"><i class="fa fa-duotone fa-circle-chevron-right next"></i></a>
             </div>
+
+            <!-- The dots/circles -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
         </section>
         <section id="services">
             <div class="services-header">
@@ -42,17 +66,21 @@
                 <p class="head-large">Best & Creative Solutions</p>
             </div>
             <div class="services-content">
-                <div class="services-icons">
-                    <i class=" fa-2x fa-solid fa-gear individual-icon"></i>
-                    <i class="fa-2x fa-solid fa-leaf individual-icon "></i>
-                    <i class=" fa-2x fa-regular fa-heart individual-icon "></i>
-                    <i class=" fa-2x  fa-solid fa-laptop individual-icon"></i>
+                <div class="services-icon-header">
+                    <i class="fa-2x fa-solid fa-gear individual-icon"></i>
+                    <span class="">Creative Solutions</span>
                 </div>
-                <div class="icon-headers">
-                    <span>Creative Solutions</span>
-                    <span>Creative Solutions</span>
-                    <span>Creative Solutions</span>
-                    <span>Creative Solutions</span>
+                <div class="services-icon-header">
+                    <i class="fa-2x fa-solid fa-leaf individual-icon"></i>
+                    <span class="">Creative Solutions</span>
+                </div>
+                <div class="services-icon-header">
+                    <i class="fa-2x fa-regular fa-heart individual-icon"></i>
+                    <span class="">Creative Solutions</span>
+                </div>
+                <div class="services-icon-header">
+                    <i class="fa-2x  fa-solid fa-laptop individual-icon"></i>
+                    <span class="">Creative Solutions</span>
                 </div>
             </div>
             <div class="services-main-feature">
@@ -74,7 +102,8 @@
                         <div class="services-icon"><i class="fa-2x fa-solid fa-rocket individual-icon"></i></div>
                         <div class="services-main-feature-content">
                             <p class="head-medium">SEO Optimized</p>
-                            <p class="head-small services-main-feature-content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ea
+                            <p class="head-small services-main-feature-content-description">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Nesciunt ea
                                 rerum commodi praesentium qui fugiat tempora perspiciatis molestiae reiciendis dolorem.
                             </p>
                         </div>
@@ -83,7 +112,8 @@
                         <div class="services-icon"><i class="fa-2x fa-solid fa-camera individual-icon"></i></div>
                         <div class="services-main-feature-content">
                             <p class="head-medium">Easy to install</p>
-                            <p class="head-small services-main-feature-content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ea
+                            <p class="head-small services-main-feature-content-description">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Nesciunt ea
                                 rerum commodi praesentium qui fugiat tempora perspiciatis molestiae reiciendis dolorem.
                             </p>
                         </div>
@@ -92,7 +122,8 @@
                         <div class="services-icon"><i class="fa-2x fa-regular fa-heart individual-icon"></i></div>
                         <div class="services-main-feature-content">
                             <p class="head-medium">Unlimited Possibilities</p>
-                            <p class="head-small services-main-feature-content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt blogea
+                            <p class="head-small services-main-feature-content-description">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Nesciunt blogea
                                 rerum commodi praesentium qui fugiat tempora perspiciatis molestiae reiciendis dolorem.
                             </p>
                         </div>
@@ -116,7 +147,7 @@
                 <p class="head-large">Saying About Us</p>
                 <div class="portfolio-main-content">
                     <div class="portfolio-image-description">
-                            <img class="portfolio-image" src="assets/about/man4.jpg" alt="portfolio-img">
+                        <img class="portfolio-image" src="assets/about/man4.jpg" alt="portfolio-img">
                         <div class="portfolio-description">
                             <p class="head-large">John Doe</p>
                             <p class="head-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum,
@@ -124,7 +155,7 @@
                         </div>
                     </div>
                     <div class="portfolio-image-description">
-                            <img class="portfolio-image" src="assets/about/man2.jpg" alt="portfolio-img">
+                        <img class="portfolio-image" src="assets/about/man2.jpg" alt="portfolio-img">
                         <div class="portfolio-description">
                             <p class="head-large">John Doe</p>
                             <p class="head-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum,
@@ -132,7 +163,7 @@
                         </div>
                     </div>
                     <div class="portfolio-image-description">
-                            <img class="portfolio-image" src="assets/about/man3.jpg" alt="portfolio-img">
+                        <img class="portfolio-image" src="assets/about/man3.jpg" alt="portfolio-img">
                         <div class="portfolio-description">
                             <p class="head-large">John Doe</p>
                             <p class="head-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum,
@@ -140,7 +171,7 @@
                         </div>
                     </div>
                     <div class="portfolio-image-description">
-                            <img class="portfolio-image" src="assets/about/man1.jpg" alt="portfolio-img">
+                        <img class="portfolio-image" src="assets/about/man1.jpg" alt="portfolio-img">
                         <div class="portfolio-description">
                             <p class="head-large">John Doe</p>
                             <p class="head-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum,
@@ -156,14 +187,15 @@
         <div class="contact-container">
             <div class="multi-header-description-col">
                 <span class="head-medium">Multi</span>
-                <p class="multi-description head-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut porro doloremque numquam. Nesciunt a dignissimos magnam suscipit odio dolore deleniti?</p>
+                <p class="multi-description head-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                    porro doloremque numquam. Nesciunt a dignissimos magnam suscipit odio dolore deleniti?</p>
                 <div class="social-media-icons">
                     <i class="fa-brands fa-facebook-f social-icon"></i>
                     <i class="fa-brands fa-twitter social-icon"></i>
                     <i class="fa-brands fa-linkedin-in social-icon"></i>
                     <i class="fa-brands fa-pinterest-p social-icon"></i>
                     <i class="fa-brands fa-google-plus-g social-icon"></i>
- 
+
 
                 </div>
             </div>
@@ -183,7 +215,8 @@
                 <span class="contact-info-header head-medium">CONTACT INFO</span>
                 <div class="contact-info-icon-description">
                     <div class="contact-info-icon"><i class="fa-2x fa-solid fa-house-chimney"></i></div>
-                    <p class="contact-info-description head-small">Office # 38, Suite 54 Elizabth Steet, Victoria State Newyork, USA 33026</p>
+                    <p class="contact-info-description head-small">Office # 38, Suite 54 Elizabth Steet, Victoria State
+                        Newyork, USA 33026</p>
                 </div>
                 <div class="horizontal-line"></div>
                 <div class="contact-info-icon-description">
